@@ -27,7 +27,7 @@ const Signin = () => {
         })
         .catch((err) => {
           setIsloading(false);
-          message.error(err.data);
+          message.error(err?.data || "Uncaught error");
         });
     },
     [dispatch]

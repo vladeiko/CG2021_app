@@ -1,64 +1,45 @@
 .auth-layout {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: flex-end;
 
   box-sizing: border-box;
 
   width: 100%;
   height: 100%;
 
+  align-items: stretch;
+
+  background-image: url("https://i.ibb.co/ZNZF1Qp/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+  
+
   .intro {
-    padding-top: 50px;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    &__title {
-      font-size: 24px;
-      font-weight: 600;
-      margin-bottom: 10px;
-    }
+    min-height: 100vh;
 
-    &__subtitle {
-      font-size: 16px;
-      color: #8392a5;
-    }
-  }
-}
+    &__top {
+      display: flex;
+      align-items: center;
+      padding-top: 67px;
+      flex-direction: column;
 
-@media (max-width: 500px) {
-  .auth-layout {
-    .intro {
-      padding: 20px;
-      margin-bottom: 10px;
-
-      &__title {
-        font-size: 22px;
-        font-weight: 600;
+      &__pre {
+        font-size: 18px;
       }
 
-      &__subtitle {
-        font-size: 16px;
-        color: #8392a5;
+      &__post {
+        font-size: 24px;
       }
+    }
+
+    &__down {
+      padding: 30px 211px;
     }
   }
 }
 
-@media (max-width: 320px) {
-  .auth-layout {
-    .intro {
-      padding: 20px;
-      margin-bottom: 4px;
-
-      &__title {
-        font-size: 22px;
-        font-weight: 600;
-      }
-
-      &__subtitle {
-        font-size: 14px;
-        color: #8392a5;
-      }
-    }
-  }
-}
