@@ -1,0 +1,26 @@
+.signup-wrapper {
+  box-sizing: border-box;
+  width: 360px;
+
+  .ant-btn.ant-btn-primary {
+    width: 100%;
+  } 
+
+  .footer-text {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .signin-wrapper {
+    width: 320px;
+  }
+}
+
+@media (max-width: 320px) {
+  .signin-wrapper {
+    width: 280px;
+  }
+}

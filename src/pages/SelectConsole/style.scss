@@ -1,0 +1,12 @@
+.select-console {
+  display: flex;
+  flex-direction: column;
+
+  &__select {
+    width: 200px !important;
+  }
+
+  .continue-button {
+    margin: 20px 0 0 0;
+  }
+}

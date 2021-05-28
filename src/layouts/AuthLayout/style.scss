@@ -1,0 +1,64 @@
+.auth-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 100%;
+
+  .intro {
+    padding-top: 50px;
+    margin-bottom: 20px;
+
+    &__title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      color: #8392a5;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .auth-layout {
+    .intro {
+      padding: 20px;
+      margin-bottom: 10px;
+
+      &__title {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      &__subtitle {
+        font-size: 16px;
+        color: #8392a5;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .auth-layout {
+    .intro {
+      padding: 20px;
+      margin-bottom: 4px;
+
+      &__title {
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      &__subtitle {
+        font-size: 14px;
+        color: #8392a5;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.header {
+  width: 100%;
+  height: 52px;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    margin: 10px 0;
+
+    &__pre {
+      color: #0168fa;
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    &__post {
+      font-size: 20px;
+    }
+  }
+}
