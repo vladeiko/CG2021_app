@@ -9,7 +9,7 @@
 
   align-items: stretch;
 
-  background-image: url("https://i.imgur.com/wH1ll3G.png");
+  background-image: url("https://i.imgur.com/EsiQcwG.png");
   background-repeat: no-repeat;
   background-position: center right;
   background-size: cover;
@@ -25,6 +25,7 @@
       display: flex;
       align-items: center;
       margin-top: 67px;
+      color: #fff;
 
       flex-direction: column;
 
@@ -38,7 +39,8 @@
     }
 
     &__down {
-      padding: 30px 211px;
+      margin-top: 113px;
+      padding: 0 211px;
     }
   }
 }
