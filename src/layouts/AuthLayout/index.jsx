@@ -9,16 +9,10 @@ const AuthLayout = ({ children }) => {
       <div className="auth-layout">
         <div className="intro">
           <div className="intro__top">
-            <div className="intro__top__pre">
-              Hackathon
-            </div>
-            <div className="intro__top__post">
-              Cyber Garden
-            </div>
+            <div className="intro__top__pre">Hackathon</div>
+            <div className="intro__top__post">Cyber Garden</div>
           </div>
-          <div className="intro__down">
-            {children}
-          </div>
+          <div className="intro__down">{children}</div>
         </div>
       </div>
     </MainLayout>
