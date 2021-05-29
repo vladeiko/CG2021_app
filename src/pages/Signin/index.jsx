@@ -34,40 +34,64 @@ const Signin = () => {
   );
 
   return (
-    <AuthLayout title="Войти" subtitle="Добро пожаловать! Войдите, чтобы продолжить">
+    <AuthLayout>
       <div className="signin-wrapper">
         <Form layout="vertical" form={form} onFinish={submitForm}>
-          <Form.Item
-            label="E-mail"
-            name="email"
-            validateTrigger="onSubmit"
-            rules={[
-              {
-                required: true,
-                type: "email",
-                message: "Пожалуйста, введите e-mail",
-              },
-            ]}>
-            <Input placeholder="Введите e-mail" />
-          </Form.Item>
-          <Form.Item
-            label="Пароль"
-            name="password"
-            validateTrigger="onSubmit"
-            rules={[
-              {
-                required: true,
-                message: "Пожалуйста, введите пароль",
-              },
-            ]}>
-            <Input.Password placeholder="Введите пароль" />
-          </Form.Item>
-          <Button type="primary" htmlType="submit" loading={isLoading}>
-            Войти
-          </Button>
+          {/* <Radio.Group name="role" defaultValue="1">
+            <div className="radio-item">
+              <span className="radio-label">Участник</span>
+              <Radio value="1" />
+            </div>
+            <div className="radio-item">
+              <span className="radio-label">Организатор</span>
+              <Radio value="2" />
+            </div>
+            <div className="radio-item">
+              <span className="radio-label">Ментор</span>
+              <Radio value="3" />
+            </div>
+          </Radio.Group> */}
+          <div className="fields-wrapper">
+            <div className="title">Войти</div>
+            <Form.Item
+              label="E-mail"
+              name="email"
+              validateTrigger="onSubmit"
+              rules={[
+                {
+                  required: true,
+                  type: "email",
+                  message: "Пожалуйста, введите e-mail",
+                },
+              ]}>
+              <div className="input-wrapper">
+                <Input placeholder="Введите e-mail" />
+              </div>
+            </Form.Item>
+            <Form.Item
+              label="Пароль"
+              name="password"
+              validateTrigger="onSubmit"
+              rules={[
+                {
+                  required: true,
+                  message: "Пожалуйста, введите пароль",
+                },
+              ]}>
+              <div className="input-wrapper-password">
+                <Input.Password placeholder="Введите пароль" />
+              </div>
+            </Form.Item>
+            <Button type="primary" htmlType="submit" loading={isLoading}>
+              Войти!
+            </Button>
+          </div>
         </Form>
         <div className="footer-text">
-          Нет аккаунта? <Link to="/signup">Зарегистрируйтесь!</Link>
+          <span className="no-acc">У вас нет аккаунта? </span>
+          <Link className="link" to="/signup">
+            Регистрация
+          </Link>
         </div>
       </div>
       {isAuthorized && <Redirect to="/select-console" />}
