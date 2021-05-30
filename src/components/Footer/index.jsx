@@ -13,7 +13,7 @@ const Footer = () => {
           <span className="logo__post">Cyber Garden</span>
         </div>
         <Link className="link" to="/main">
-          Глаавная
+          Главная
         </Link>
         <Link className="link" to="/events">
           События
@@ -33,7 +33,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="map">
-        <div className="fake-map" />
+        <div className="map-text">Мы тут</div>
+        <img className="map-img" src="https://i.imgur.com/nZqhMO4.png" alt="ABOBA" />
       </div>
     </div>
   );
