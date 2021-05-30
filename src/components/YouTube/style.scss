@@ -1,0 +1,22 @@
+.you-tube {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 80px;
+  padding-bottom: 60px;
+
+  span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+
+    padding-bottom: 30px;
+
+    color: #000000;
+  }
+
+  iframe {
+    align-self: center;
+  }
+}
