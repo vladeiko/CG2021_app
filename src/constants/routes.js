@@ -1,19 +1,17 @@
 import React from "react";
 import SigninPage from "../pages/Signin";
 import SignupPage from "../pages/Signup";
-import TestAuthorizedPage from "../pages/TestAuthorizedPage";
-import SelectConsolePage from "../pages/SelectConsole";
 import ProfilePage from "../pages/Profile";
-import TestPage from "../pages/TestContentLayout";
+import MainPage from "../pages/Main";
 
 export const Routes = {
   Home: "/",
   SignIn: "/signin",
   SignUp: "/signup",
   TestAuthorized: "/testauth",
-  SelectConsole: "/select-console",
   Profile: "/profile",
   Test: "/test",
+  Main: "/main",
 };
 
 export const publicRoutes = [];
@@ -28,7 +26,5 @@ const createPrivateRoute = (path, component) => {
 
 createPublicRoute(Routes.SignIn, <SigninPage />);
 createPublicRoute(Routes.SignUp, <SignupPage />);
-createPublicRoute(Routes.Test, <TestPage />);
-createPrivateRoute(Routes.TestAuthorized, <TestAuthorizedPage />);
-createPrivateRoute(Routes.SelectConsole, <SelectConsolePage />);
+createPublicRoute(Routes.Main, <MainPage />);
 createPrivateRoute(Routes.Profile, <ProfilePage />);
