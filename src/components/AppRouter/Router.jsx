@@ -15,7 +15,7 @@ const AppRouter = () => {
         {privateRoutes.map((route) => (
           <ProtectedRoute path={route.path} component={route.component} key={route.path} exact />
         ))}
-        <Redirect to={Routes.SignIn} />
+        <Redirect to={Routes.Main} />
       </Switch>
     </Router>
   );
