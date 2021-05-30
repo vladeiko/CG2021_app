@@ -3,6 +3,7 @@ import SigninPage from "../pages/Signin";
 import SignupPage from "../pages/Signup";
 import ProfilePage from "../pages/Profile";
 import MainPage from "../pages/Main";
+import QuestionsPage from "../pages/Questions";
 
 export const Routes = {
   Home: "/",
@@ -12,6 +13,7 @@ export const Routes = {
   Profile: "/profile",
   Test: "/test",
   Main: "/main",
+  Questions: "/questions",
 };
 
 export const publicRoutes = [];
@@ -26,5 +28,6 @@ const createPrivateRoute = (path, component) => {
 
 createPublicRoute(Routes.SignIn, <SigninPage />);
 createPublicRoute(Routes.SignUp, <SignupPage />);
+createPublicRoute(Routes.Questions, <QuestionsPage />);
 createPublicRoute(Routes.Main, <MainPage />);
 createPrivateRoute(Routes.Profile, <ProfilePage />);

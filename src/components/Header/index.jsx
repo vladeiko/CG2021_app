@@ -23,7 +23,9 @@ const Header = () => {
       <Link className="link" to="/chat">
         Чат
       </Link>
-      <UserIcon />
+      <Link className="link" to="/signin">
+        <UserIcon />
+      </Link>
     </div>
   );
 };
